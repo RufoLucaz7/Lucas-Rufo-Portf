@@ -1,0 +1,70 @@
+@font-face {
+    font-family: fonte;
+    src: url(Fragmentcore.otf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('https://wallpapers.com/images/featured/cool-cars-lamborghini-pggd11101u1bzaya.jpg')center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-items: center;
+}
+
+h1{
+    color: #d1cdcd;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    font-family: fonte;
+}
+
+.calculadora{
+    background: rgba(0, 0, 0, 0.445);
+    border-radius: 4%;
+    padding: 2%;
+
+    
+}
+
+h2{
+    font-size: 1.5rem;
+
+}
+
+#resultado{
+    background: #fff;
+    color: black;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 2%;
+    overflow: hidden;
+    width: 14rem; 
+    height: 2rem;
+}
+
+button{
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: .2rem;
+    background-color: #f3f3f3;
+    border: none;
+    transition: all .5s;
+}
+
+button:hover{
+    border: 2px solid #000000;
+    background: #a81a1a84; 
+    transform: scale(90%);
+   
+}

@@ -1,0 +1,105 @@
+@import url('spaceranger.ttf');
+
+html{
+    background: url('https://images3.alphacoders.com/208/thumb-1920-208059.jpg') center;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+h1{
+    color: rgb(189, 24, 24);
+    font-family: 'spaceranger.ttf';
+}
+input:focus{
+    outline: none;
+    border-color: #08558b;
+}
+a{
+    font-size: .8rem;
+}
+a:hover{
+    color: rgb(70, 107, 217);
+}
+/* CONTAINER LOGIN */
+#login-container{
+    background-color: #fff;
+    width: 25rem;
+    padding: 1.25rem;
+    border-radius: .625rem;
+    text-align: center;
+}
+/* FORMULARIO */
+form{
+    margin: 2.5rem 0;
+}
+label, input{
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+label{
+    font-weight: bold;
+    font-size: .8rem;
+    
+}
+input{
+    border-bottom:  2px solid #323232;
+    padding: .625rem;
+    font-size: 1rem;
+    margin-bottom: 1,25rem;
+}
+#forgot-pass{
+    text-align: right;
+    display: block;
+}
+/* #6A0C0D <-vermei #231610 <-marrom rgb(189, 24, 24) <-primeira cor*/
+input[value="login"]{
+    background:linear-gradient(to left,#F92522, #1F1812) ;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.25rem;
+    margin: 1.8rem auto 0;
+    cursor: pointer;
+    width: 40%;
+    transition: all 1.5s;
+    
+}
+input[value="login"]:hover {
+    background-color: rgb(189, 24, 24);
+    width: 100%;
+}
+/* SOCIAL CONTAINER */
+#social-container, #social-container p{
+    margin-bottom: 1.25rem;
+}
+#social-container i{
+    color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 50%;
+}
+.fa-facebook-f {
+    background-color: #1F7BF2;
+}
+.fa-linkedin{
+    background-color: #086B9C;
+}
+.fa-whatsapp{
+    background: linear-gradient(to bottom,#5FF475, #38c33a);
+}
+#register-container p{
+    margin-bottom: .6rem;
+}

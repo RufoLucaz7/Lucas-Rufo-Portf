@@ -1,0 +1,111 @@
+@font-face {
+  font-family: louis;
+  src: url(Louis\ George\ Cafe.ttf);
+}
+
+@font-face {
+  font-family: big;
+  src: url(big_noodle_titling.ttf);
+}
+.navbar {
+    background-color:#2a16c5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    color: #fff;
+}
+
+.navbar .navbar__content {
+
+    padding: 3rem 4rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar__content > a{
+  font-size: 5rem;
+  font-family: big;
+}
+
+.navbar .navbar__content .navbar__links li {
+
+    display: inline-block;
+    transition: border-bottom .3s ease-in;
+    
+
+}
+
+.navbar .navbar__content .navbar__links li:hover{
+  border-bottom: 4px solid #000000;
+  
+
+}
+
+.navbar .navbar__content .navbar__links li:not(:last-of-type) {
+    margin-right: 2rem;
+}
+
+.navbar .navbar__content .navbar__links a {
+    font-family: big;
+    font-size: 3rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.navbar .navbar__content .navbar__links a:hover {
+    color: var(--tertiary-color);
+}
+
+.navbar.active {
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar__content .navbar__mobile,
+.navbar .navbar__content .navbar__mobile .mobile__links {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar .navbar__content .navbar__links {
+      display: none;
+    }
+  
+    .navbar .navbar__content .navbar__mobile {
+      display: flex;
+      align-items: center;
+    }
+  
+    .navbar .navbar__content .navbar__mobile img {
+      width: 3.6rem;
+      height: 3.6rem;
+      cursor: pointer;
+    }
+  
+    .navbar .navbar__content .navbar__mobile.active .mobile__links {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--blue);
+      width: 100%;
+      position: absolute;
+      top: 98%;
+      left: 0;
+      padding: 1rem 0;
+      box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      border-bottom: 1px solid yellow;
+
+    }
+  
+    .navbar .navbar__content .navbar__mobile.active .mobile__links li {
+      margin-right: 0;
+    }
+  
+    .navbar .navbar__content .navbar__mobile.active .mobile__links li a {
+      padding: 1rem;
+      display: block;
+      text-align: center;
+    }
+  }

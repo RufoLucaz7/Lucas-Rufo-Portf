@@ -1,0 +1,62 @@
+@font-face {
+    font-family: fonte;
+    src: url(Fragmentcore.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background: url('https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt3a143f4349d98000/633779f622805845e72d3e32/GettyImages-56450519.jpg?auto=webp&format=pjpg&width=3840&quality=60') center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+   
+}
+
+section{
+   background: transparent;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+
+}
+
+section div{
+    
+    background: #eee;
+    color: #e82020;
+    width: 80%;
+    text-align: center;
+    box-shadow: 8px 10px 4px rgb(253, 0, 0);
+    border-radius: 5px;
+    margin: 1%;
+}
+
+h1{ 
+    color: #ff0000;
+    margin-top: -15%;
+    font-family: fonte;
+    text-shadow: 4px 4px 10px rgb(0, 0, 0);
+
+    
+
+}
+
+div p{
+    font-size: 4rem;
+   
+}
+
+div p.tempo{
+    font-size: 1rem;
+    font-family: fonte;
+    padding: 4%;
+
+}
+
